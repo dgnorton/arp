@@ -9,7 +9,7 @@ type CacheEntries []*CacheEntry
 
 // CacheEntry represents an entry in the ARP cache.
 type CacheEntry struct {
-	IP           *net.IP
+	IP           net.IP
 	HardwareAddr net.HardwareAddr
 	HardwareType string
 	Interface    *net.Interface
